@@ -1,0 +1,257 @@
+[
+	{
+		"pk":1,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"0",
+			"name":"Joel James",
+			"position":"Forward",
+			"height":82, //measured in inches, actual: 6'10"
+			"weight":260,
+			"year":"Freshman",
+			"hometown":"West Palm Beach, FL",
+			"high school":"Dwyer",
+			"major":"Undeclared"
+		}
+	},
+
+	{
+		"pk":2,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"1",
+			"name":"Dexter Strickland",
+			"position":"Guard",
+			"height":75, //6'3"
+			"weight":180,
+			"year":"Senior",
+			"hometown":"Rahway, NJ",
+			"high school":"St. Patrick",
+			"major":"Communications"
+		}
+	},
+
+	{
+		"pk":3,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"2",
+			"name":"Leslie McDonald",
+			"position":"Guard",
+			"height":77, //6'5"
+			"weight":215,
+			"year":"Junior",
+			"hometown":"Memphis, TN",
+			"high school":"Briarcrest Christian School",
+			"major":"Communications"
+		}
+	},
+
+	{
+		"pk":4,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"3",
+			"name":"Wade Moody",
+			"position":"Guard",
+			"height":72, //6'0"
+			"weight":175,
+			"year":"Junior",
+			"hometown":"Mount Airy, NC",
+			"high school":"Mount Airy",
+			"major":"Management and Society"
+		}
+	},
+
+	{
+		"pk":5,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"4",
+			"name":"Luke Davis",
+			"position":"Guard",
+			"height":72, //6'0"
+			"weight":172,
+			"year":"Sophomore",
+			"hometown":"Raleigh, NC",
+			"high school":"Ravenscroft",
+			"major":"Sociology"
+		}
+	},
+
+	{
+		"pk":6,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"5",
+			"name":"Marcus Paige",
+			"position":"Guard",
+			"height":72.5, //6'0.5"
+			"weight":157,
+			"year":"Freshman",
+			"hometown":"Marion, IA",
+			"high school":"Linn-Mar",
+			"major":"Undeclared"
+		}
+	},
+
+	{
+		"pk":7,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"11",
+			"name":"Brice Johnson",
+			"position":"Forward",
+			"height":81, //6'9"
+			"weight":187,
+			"year":"Freshman",
+			"hometown":"Orangeburg, SC",
+			"high school":"Edisto",
+			"major":"Undeclared"
+		}
+	},
+
+	{
+		"pk":8,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"14",
+			"name":"Desmond Hubert",
+			"position":"Forward",
+			"height":81.5, //6'9.5"
+			"weight":220,
+			"year":"Sophomore",
+			"hometown":"Cream Ridge, NJ",
+			"high school":"New Egypt",
+			"major":"Undeclared"
+		}
+	},
+
+	{
+		"pk":9,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"15",
+			"name":"P.J. Hairston",
+			"position":"Guard",
+			"height":77.5, //6'5.5"
+			"weight":220,
+			"year":"Sophomore",
+			"hometown":"Greensboro, NC",
+			"high school":"Dudley",
+			"major":"Undeclared"
+		}
+	},
+
+	{
+		"pk":10,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"21",
+			"name":"Jackson Simmons",
+			"position":"Forward",
+			"height":79, //6'7"
+			"weight":220,
+			"year":"Sophomore",
+			"hometown":"Webster, NC",
+			"high school":"Smoky Mountain",
+			"major":"Undeclared"
+		}
+	},
+
+	{
+		"pk":11,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"22",
+			"name":"Frank Tanner",
+			"position":"Forward",
+			"height":76, //6'4"
+			"weight":210,
+			"year":"Senior",
+			"hometown":"Charlotte, NC",
+			"high school":"Hickory Ridge",
+			"major":"Business Administration, Finance"
+		}
+	},
+
+	{
+		"pk":12,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"25",
+			"name":"J.P. Tokoto",
+			"position":"Forward",
+			"height":77, //6'5"
+			"weight":185,
+			"year":"Freshman",
+			"hometown":"Menomonee Falls, WI",
+			"high school":"Menomonee Falls",
+			"major":"Undeclared"
+		}
+	},
+
+	{
+		"pk":13,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"30",
+			"name":"James Manor",
+			"position":"Forward",
+			"height":78, //6'6"
+			"weight":210,
+			"year":"Junior",
+			"hometown":"Carrboro, NC",
+			"high school":"Chapel Hill",
+			"major":"Business Administration"
+		}
+	},
+
+	{
+		"pk":14,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"34",
+			"name":"Denzel Robinson",
+			"position":"Forward",
+			"height":76, //6'4"
+			"weight":215,
+			"year":"Junior",
+			"hometown":"Chapel Hill, NC",
+			"high school":"Chapel Hill",
+			"major":"Communications"
+		}
+	},
+
+	{
+		"pk":15,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"35",
+			"name":"Reggie Bullock",
+			"position":"Guard",
+			"height":79, //6'7"
+			"weight":205,
+			"year":"Junior",
+			"hometown":"Kinston, NC",
+			"high school":"Kinston",
+			"major":"Communications"
+		}
+	},
+
+	{
+		"pk":16,
+		"model": "basketball.Player",
+		"fields": {
+			"number":"43",
+			"name":"James Michael McAdoo",
+			"position":"Forward",
+			"height":81, //6'9"
+			"weight":230,
+			"year":"Sophomore",
+			"hometown":"Norfolk, VA",
+			"high school":"Norfolk Christian",
+			"major":"Undeclared"
+		}
+	},
+]

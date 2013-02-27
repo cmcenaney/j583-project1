@@ -1,0 +1,10 @@
+[
+    {
+        "pk": 1,
+        "model": "basketball.Team",
+        "fields": {
+            "name": "Men's Basketball",
+            "season": "2012-2013",
+        }
+    },
+]
