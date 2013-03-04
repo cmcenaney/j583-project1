@@ -13,11 +13,12 @@ class Players(models.Model):
     major = models.CharField(unique=False, max_length=12)
     
     #imageurl = models.ImageField(max_length = 100)
-    #class Meta(object):
-        #ordering = ('pid', 'name')
+    class Meta(object):
+        verbose_name_plural = "Players"
+        #ordering = ('-date', 'name',)
         
     def __unicode__(self):
-        return U'%s %s' %(self.name)
+        return U'%s' %(self.name)
 
 class Team(models.Model):
     name = models.CharField(unique=True, max_length=50)
@@ -25,10 +26,7 @@ class Team(models.Model):
     record = models.CharField(unique=True, max_length=50)
     players = models.ManyToManyField(Players)
     
-    #class Meta(object):
-        #verbose_name_plural = "Courses"
-        #ordering = ('-date', 'name',)
-        
+   
     def __unicode__(self):
         return U'%s' %(self.name)
     

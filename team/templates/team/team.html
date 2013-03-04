@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load humanize %}
+{% load url from future %}
+{% block content %}
+
+<h1>2012-2013 Men's Basketball Roster</h1>
+
+
+<ul>
+	<li>{{ team.name}}</li>
+	<li>{{ team.season}}</li>	
+	<li>{{ team.record}}</li>
+	{{ teamList }}
+</ul>
+
+
+
+
+
+{% endblock %} 

@@ -6,7 +6,11 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'team.views.home', name='home'),
+    #url(r'^$', 'team.views.home', name='home'),
+    #url(r'^$', 'team.views.home', name='team'),
+    url(r'^$', 'team.views.home', name='team_home'),
+    url(r'^team/(?P<pk>\d+)$', 'team.views.team', name='team_team'),
+    url(r'^players/(?P<pk>\d+)$', 'team.views.players', name='team_players'),
     # url(r'^basketball/', include('basketball.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
@@ -14,4 +18,6 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+
+
 )

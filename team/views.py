@@ -9,13 +9,21 @@ def home(request):
 	context = {
 		'players_count': Players.objects.count(),
 		'team_count': Team.objects.count(),
+
 	}
 	return render(request, "team/home.html", context)
 
 
 def team(request, pk):
+	tempteams = Team.objects.get(id=pk)
+	tempteams = tempteams.players.all() 
 	team = get_object_or_404(Team, id=pk)
-	return render (request, "team/team.html", {'team': team})
+	context = {
+		'teamList': tempteams,
+		'team': team,
+	}
+
+	return render (request, "team/team.html", context)
 
 def players(request, pk):
 	players = get_object_or_404(Players, id=pk)

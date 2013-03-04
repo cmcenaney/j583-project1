@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load humanize %}
+{% load url from future %}
+{% block content %}
+
+
+
+
+
+<h2>Player:{{players.number}} {{ players.name }}</h2>
+
+<p>Details</p>
+<table border=1>
+<td>
+	<tr>
+		<td>position:</td>
+		<td>{{players.position}}</td>
+	</tr>
+	<tr>
+		<td>height:</td>
+		<td>{{players.height}}</td>
+	</tr>
+	<tr>
+		<td>weight:</td>
+		<td>{{players.weight}}</td>
+	</tr>
+	<tr>
+		<td>hometown:</td>
+		<td>{{players.hometown}}</td>
+	</tr>
+	<tr>
+		<td>high school:</td>
+		<td>{{players.high_school}}</td>
+	</tr>
+	<tr>
+		<td>major:</td>
+		<td>{{players.major}}</td>
+	</tr>
+
+
+	
+	
+<td>
+</table>
+{% endblock %}
+
+
+
+		
