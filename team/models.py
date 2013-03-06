@@ -11,8 +11,9 @@ class Players(models.Model):
     hometown = models.CharField(unique=False, max_length=3)
     high_school = models.CharField(unique=False, max_length=50)
     major = models.CharField(unique=False, max_length=12)
+    image = models.CharField(max_length=100)
     
-    #imageurl = models.ImageField(max_length = 100)
+
     class Meta(object):
         verbose_name_plural = "Players"
         #ordering = ('-date', 'name',)
