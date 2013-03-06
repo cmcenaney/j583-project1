@@ -11,7 +11,16 @@
 	<li>{{ team.name}}</li>
 	<li>{{ team.season}}</li>	
 	<li>{{ team.record}}</li>
-	{{ teamList }}
+	
+
+
+{% for i in teamList %}
+
+<a href="{% url 'team_players' i.id %}"> {{ i.name}}</a>
+{% endfor %}
+
+
+	
 </ul>
 
 
