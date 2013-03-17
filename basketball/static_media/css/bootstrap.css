@@ -8,6 +8,9 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+ /* Carousel base class */
+  
+
 .clearfix {
   *zoom: 1;
 }
@@ -178,7 +181,7 @@ textarea {
   }
   a,
   a:visited {
-    text-decoration: underline;
+    text-decoration: none;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -231,13 +234,13 @@ body {
 }
 
 a {
-  color: #0088cc;
+  color: #ccc;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #005580;
+  color: #ccc;
   text-decoration: underline;
 }
 
@@ -2898,8 +2901,8 @@ table th[class*="span"],
 }
 
 .dropdown .caret {
-  margin-top: 8px;
-  margin-left: 2px;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
 .dropdown-menu {
@@ -3785,7 +3788,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .btn .caret {
-  margin-top: 8px;
+  margin-top: 0px;
   margin-left: 0;
 }
 
