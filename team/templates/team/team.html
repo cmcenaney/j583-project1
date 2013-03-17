@@ -4,7 +4,7 @@
 {% load url from future %}
 {% block content %}
 
-<a href=""><h1>Carolina Athletics</h1></a>
+<a href="{% url 'team_home' %}"><img src="{{ STATIC_URL }}img/well.jpg" style=float:left;><h1>Carolina Athletics</h1></a>
 
 <ul class="nav nav-tabs">
   <li class="dropdown">
@@ -57,12 +57,12 @@
 
   <hr>
 
-<h2>{{ team.season }} {{ team.name }} Roster</h2>
+<h2>{{ team.season }}-2013 {{ team.name }} </h2>
 
 
 <table class="table table-bordered">
   <tr>
-    <td>Record: {{ team.record }}</td>
+    <td>Overall Season Record: {{ team.record }}</td>
   </tr>
 </table>
 
@@ -71,9 +71,12 @@
 {% for i in teamList %}
 
   <tr>
-    <td>#{{ i.number }}</td>
-    <td><a href="{% url 'team_players' i.id %}"> {{ i.name }}</a></td>
-    <td><img src="{{ i.image }}" class="img-polaroid"></td>
+    <td><style="font-size:20px">#{{ i.number }}</td>
+    <td>
+      <a href="{% url 'team_players' i.id %}"><strong> {{ i.name }} </strong></a> </br>
+      {{ i.position }}
+    </td>
+    <td><img src="{{ i.image }}" class="img-polaroid" width="50px"></td>
   </tr>
 
 	<!--<ul>

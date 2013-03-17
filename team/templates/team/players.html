@@ -4,7 +4,7 @@
 {% load url from future %}
 {% block content %}
 
-<a href=""><h1>Carolina Athletics</h1></a>
+<a href="{% url 'team_home' %}"><img src="{{ STATIC_URL }}img/well.jpg" style=float:left;><h1>Carolina Athletics</h1></a>
 
 <ul class="nav nav-tabs">
   <li class="dropdown">
@@ -67,15 +67,15 @@
 	<tr>
 		<td>Position</td>
 		<td>{{players.position}}</td>
-    <td rowspan="6" colspan="1"><img src="{{players.image}}" class="img-polaroid" width:"150px"></td>  
+    <td rowspan="6"><img src="{{players.image}}" class="img-polaroid" width="126px" padding:"20px";></td>  
 	</tr>
 	<tr>
 		<td>Height</td>
-		<td>{{players.height}}</td>
+		<td>{{players.height}} in.</td>
 	</tr>
 	<tr>
 		<td>Weight</td>
-		<td>{{players.weight}}</td>
+		<td>{{players.weight}} lbs.</td>
 	</tr>
 	<tr>
 		<td>Hometown</td>
