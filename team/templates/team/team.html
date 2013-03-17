@@ -15,18 +15,18 @@
         <b class="caret"></b>
       </a>
     <ul class="dropdown-menu">
-    	<li><a href="#">Baseball<a></li>
-    	<li><a href="">Basketball<a></li>
-    	<li><a href="#">Cross Country<a></li>
-    	<li><a href="#">Fencing<a></li>
-    	<li><a href="#">Football<a></li>
-    	<li><a href="#">Golf<a></li>
-    	<li><a href="#">Lacrosse<a></li>
-    	<li><a href="#">Soccer<a></li>
-    	<li><a href="#">Swimming & Diving<a></li>
-    	<li><a href="#">Tennis<a></li>
-    	<li><a href="#">Track & Field<a></li>
-    	<li><a href="#">Wrestling<a></li>
+    	<li><a href="#">Baseball</a></li>
+    	<li><a href="">Basketball</a></li>
+    	<li><a href="#">Cross Country</a></li>
+    	<li><a href="#">Fencing</a></li>
+    	<li><a href="#">Football</a></li>
+    	<li><a href="#">Golf</a></li>
+    	<li><a href="#">Lacrosse</a></li>
+    	<li><a href="#">Soccer</a></li>
+    	<li><a href="#">Swimming & Diving</a></li>
+    	<li><a href="#">Tennis</a></li>
+    	<li><a href="#">Track & Field</a></li>
+    	<li><a href="#">Wrestling</a></li>
       <!-- links -->
     </ul>
   </li>
@@ -38,56 +38,68 @@
         <b class="caret"></b>
       </a>
     <ul class="dropdown-menu">
-      <li><a href="#">Basketball<a></li>
-      <li><a href="#">Cross Country<a></li>
-      <li><a href="#">Fencing<a></li>
-      <li><a href="#">Field Hockey<a></li>
-      <li><a href="#">Golf<a></li>
-      <li><a href="#">Gymnastics<a></li>
-      <li><a href="#">Lacross<a></li>
-      <li><a href="#">Rowing<a></li>
-      <li><a href="#">Soccer<a></li>
-      <li><a href="#">Softball<a></li>
-      <li><a href="#">Swimming & Diving<a></li>
-      <li><a href="#">Tennis<a></li>
-      <li><a href="#">Track & Field<a></li>
-      <li><a href="#">Volleyball<a></li>
+      <li><a href="#">Basketball</a></li>
+      <li><a href="#">Cross Country</a></li>
+      <li><a href="#">Fencing</a></li>
+      <li><a href="#">Field Hockey</a></li>
+      <li><a href="#">Golf</a></li>
+      <li><a href="#">Gymnastics</a></li>
+      <li><a href="#">Lacross</a></li>
+      <li><a href="#">Rowing</a></li>
+      <li><a href="#">Soccer</a></li>
+      <li><a href="#">Softball</a></li>
+      <li><a href="#">Swimming & Diving</a></li>
+      <li><a href="#">Tennis</a></li>
+      <li><a href="#">Track & Field</a></li>
+      <li><a href="#">Volleyball</a></li>
     </ul>
   </li>
 
-  <hr>
+<hr>
 
-<h2>{{ team.season }}-2013 {{ team.name }} </h2>
+<img src="{{ STATIC_URL }}img/court.jpg">
 
-
-<table class="table table-bordered">
-  <tr>
-    <td>Overall Season Record: {{ team.record }}</td>
-  </tr>
-</table>
-
-	
-<table class="table table-hover table-bordered">
-{% for i in teamList %}
-
-  <tr>
-    <td><style="font-size:20px">#{{ i.number }}</td>
-    <td>
-      <a href="{% url 'team_players' i.id %}"><strong> {{ i.name }} </strong></a> </br>
-      {{ i.position }}
-    </td>
-    <td><img src="{{ i.image }}" class="img-polaroid" width="50px"></td>
-  </tr>
-
-	<!--<ul>
-    <li>#{{ i.number }} <img src="{{ i.image }}"><a href="{% url 'team_players' i.id %}"> {{ i.name}}</a></li>
-  </ul> -->
-{% endfor %}
-</table>
+  
+    <table >
+      <tr>
+        <td><h1>{{ team.season }}-2013 {{ team.name }}</h1></td>
+        <td style="padding-left:85px">
+          Season Record: {{ team.record }} <br>
+          Updated Feb. 23
+        </td>
+      </tr>
+    </table>
+  
+  
 
 
-	</ul>
-</ul>
+<div class="row">
+  <div class="span8">
+    <table class="table table-hover table-bordered">
+      {% for i in teamList %}
+      <tr>
+        <td><style="font-size:15px">#{{ i.number }}</td>
+        <td>
+          <a href="{% url 'team_players' i.id %}"><strong> {{ i.name }} </strong></a> </br>
+          {{ i.position }}
+        </td>
+        <td style="text-align:center;"><img src="{{ i.image }}" class="img-polaroid" width="50px"></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  <div class="span4">
+   <a class="twitter-timeline" href="https://twitter.com/UNC_Basketball" data-widget-id="313404567612162048">Tweets by @UNC_Basketball</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+
+  </div>
+</div>
+
+</div>
+
 
 
 
